@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <title>Apli Intern</title>
+	<link rel='https://cdnjs.com/libraries/Chart.js'>
+</head>
+<body>
+	<div class='jumbotron'>
+		<div class='row'>
+		<div class="nav">
+			<ul>
+				<li class="nav-bar" style="float:right"><a class="active btn btn-lg btn-info" style='margin-right:15px;' href="#">Apli.ai</a></li>
+				</ul>
+		</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2" >
+				<div class="image" style='border:2px solid black; margin:10px; padding-left:5px; padding-right:5px; padding-top:5px; border-radius:5px;'>
+					<img class="img-container img-preview" src="./candidate.png">
+					<h4>Candidate</h4>
+				</div>
+			</div>
+			<div class="col-md-10">
+				<div class='col-md-8' style='padding-left:80px;'><br><br>
+						<ul class="pagination pagination-lg" id="pageNo">
+							<li><a href="#" class="prev"><span aria-hidden="true">&laquo;</span>  Prev</a></li>
+							<li class="pagenumber active" value="1"><a href="#" >1</a></li>
+							<li class="pagenumber" value="2"><a href="page2.html">2</a></li>
+							<li class="pagenumber" value="3"><a href="page3.html">3</a></li>
+							<li class="pagenumber" value="4"><a href="page4.html">4</a></li>
+							<li class="pagenumber" value="5"><a href="page5.html">5</a></li>
+							<li><a href="page2.html" class="next">Next <span aria-hidden="true">&raquo;</span></a></li>
+						</ul>
+				</div>
+						<div class='box'>
+						
+							<div class='pageDisplay'></div>
+						
+						</div>
+						
+					<div class="col-md-4">
+							<div class='rating-stars text-center'>
+								<h3>GRADE VIDEO ANSWER</h3>
+								<ul id='stars'>
+									<li class='star' title='Poor' data-value='1'>
+										<i class='fa fa-star fa-fw'></i>
+									</li>
+									<li class='star' title='Fair' data-value='2'>
+										<i class='fa fa-star fa-fw'></i>
+									</li>
+									<li class='star' title='Good' data-value='3'>
+										<i class='fa fa-star fa-fw'></i>
+									</li>
+									<li class='star' title='Excellent' data-value='4'>
+										<i class='fa fa-star fa-fw'></i>
+									</li>
+									<li class='star' title='WOW!!!' data-value='5'>
+										<i class='fa fa-star fa-fw'></i>
+									</li>
+								</ul>
+								<div class='success-box'>
+									<div class='text-message'></div>
+								</div>
+								
+								<br><br>
+									<h3>FEEDBACK</h3>
+								   
+										<div class="row" >
+										<form class='form'>
+											<div class="form-group">
+												<textarea type="text" class='form-control' tab='3' name="comments" placeholder="Comment(Optional)" ></textarea>
+											</div>
+											<div class="form-group">
+												<button id='submitbutton' class="btn btn-info">Submit</button>
+											</div>
+										</form>
+										</div>
+							</div>
+					   
+					   
+						</div>
+						
+					</div>
+		</div>
+		<div class='row'>
+			<div class='col-md-3'></div>
+			<div class='col-md-7'>
+				<video width="320" height="176" controls>
+					<source src="vid/interview.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class='col-md-2'></div>
+			
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="script.js"></script>
+	</div>
+</body>
+</html>
